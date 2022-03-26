@@ -1,0 +1,162 @@
+/* Reset CSS */
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: 'Ubuntu', sans-serif; }
+a { text-decoration: none; }
+ul { list-style: none; }
+
+
+.container {
+    max-width: 1440px;
+    padding: 0 9%;
+}
+
+
+/* Cabecalho */
+header {
+    background-color: #2E948A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+header .container h2{
+    height: 77px;
+    width: 244px;
+}
+header .container h2 a {
+    display: inline-block;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    background: url(images/logo-header.png);
+}
+header .container nav ul {
+    display: flex;
+    gap: 40px;
+}
+header .container nav ul a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+
+main {
+    padding: 123px;
+}
+
+
+
+
+
+/* Rodape */
+footer {
+    background-color: #419488;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer .container h2{
+    height: 102px;
+    width: 312px;
+}
+footer .container h2 a {
+    display: inline-block;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    background: url(images/logo-footer.png);
+}
+footer .container ul li,
+footer .container div a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.98px;
+    color: #fff;
+}
+footer .container div a {
+    display: block;
+    text-align: center;
+    padding: 15px 53px;
+    border: 2px solid #FFF;
+    border-radius: 62px;
+}
+footer .container div a:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+
+
+
+
+@media screen and (max-width: 885px) {
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container ul {
+        display: flex;
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 738px) {
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    header .container,
+    footer .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 360px) {
+    header .container nav ul {
+        gap: 20px;
+    }
+    header .container nav ul li a {
+        font-size: 18px;
+    }
+    footer .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    footer .container h2 {
+        height: calc(80vw / 3.058);
+        width: 80vw;
+    }
+    footer .container h2 a{
+        background-size: cover;
+        background-position: center;
+    }
+    footer .container ul {
+        gap: 20px;
+    }
+    footer .container div {
+        width: 80%;
+    }
+    footer .container div a {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
