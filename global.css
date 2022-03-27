@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /* Reset CSS */
 * { padding: 0; margin: 0; box-sizing: border-box; font-family: 'Ubuntu', sans-serif; }
 a { text-decoration: none; }
@@ -46,17 +48,6 @@ header .container nav ul a {
     font-weight: 700;
     text-transform: uppercase;
 }
-
-
-
-
-
-main {
-    padding: 123px;
-}
-
-
-
 
 
 /* Rodape */
