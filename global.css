@@ -5,12 +5,10 @@
 a { text-decoration: none; }
 ul { list-style: none; }
 
-
 .container {
     max-width: 1440px;
     padding: 0 130px;
 }
-
 
 /* Cabecalho */
 header {
@@ -100,8 +98,6 @@ footer .container div a:hover {
 footer .container div a:not(:last-child) {
     margin-bottom: 13px;
 }
-
-
 
 
 
