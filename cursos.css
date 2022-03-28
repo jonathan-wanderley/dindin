@@ -1,0 +1,99 @@
+main {
+    padding: 81px 130px 202px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    text-transform: capitalize;
+    color: #FF4081;
+    
+}
+main > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+main .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    padding: 107px 10px 93px 10px;
+}
+main .item:first-of-type {
+    padding-top: 95px
+}
+main .item:not(:last-child) {
+    border-bottom: 5px solid #C4C4C4;
+}
+main .item img {
+    width: 380px;
+    height: 381px;
+}
+main .item div h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
+    margin-bottom: 37px;
+    margin-top: 16px;
+}
+main .item div p {
+    max-width: 724px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    max-width: 724px;
+    margin-bottom: 53px;
+}
+main .item div a {
+    display: inline-block;
+    background-color: #419488;
+    color: #fff;
+    padding: 14px 39px;
+    border-radius: 62px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+main .item div a:hover {
+    background-color: #58a599;
+}
+
+
+@media screen and (max-width: 925px) {
+    main {
+        text-align: center;
+        padding: 81px 30px 202px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    main .item {
+        flex-direction: column;
+        align-items: center;
+        padding: 107px 0px 93px 0px;
+    }
+    main .item div {
+        text-align: center;
+    }
+    main .item img {
+        width: 310px;
+        height: 310px;
+    }
+}
+@media screen and (max-width: 375px) {
+    main .item img {
+        width: 100%;
+        height: auto;
+    }
+    main {
+        padding: 81px 20px 90px;
+    }
+}
