@@ -109,6 +109,10 @@ main {
     background-color: #FF4081;
     padding: 21px 50px;
     border-radius: 62px;
+    transition: transform 0.2s ease;
+}
+.section2 div a:hover {
+    transform: translateY(-3px);
 }
 @media screen and (max-width: 1245px) {
     .section2 div:not(:last-child) {
