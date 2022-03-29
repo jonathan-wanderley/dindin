@@ -30,7 +30,7 @@ main {
 .section1 .img {
     width: 380px;
     height: 381px;
-    background: url('images/ilustra-poupando.png');
+    background: url('../images/ilustra-poupando.png');
     background-size: cover;
 }
 
