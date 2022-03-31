@@ -2,6 +2,7 @@ const cursos = document.querySelectorAll('.item');
 const botoes = document.querySelectorAll('.botao-modal');
 const modal = document.querySelector('.modal');
 const modalClose = modal.querySelector('.close');
+
 cursos.forEach(curso => {
     const botao = curso.querySelector('.botao-modal');
     botao.addEventListener('click', (e) => {
@@ -16,6 +17,7 @@ cursos.forEach(curso => {
         modal.style.display = 'flex';
     });
 });
+
 modalClose.addEventListener('click', () => {
     modal.style.display = 'none';
 })

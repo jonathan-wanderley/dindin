@@ -22,7 +22,6 @@ main .item {
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    gap: 40px;
     padding: 107px 10px 93px 10px;
 }
 main .item:first-of-type {
@@ -31,9 +30,13 @@ main .item:first-of-type {
 main .item:not(:last-child) {
     border-bottom: 5px solid #C4C4C4;
 }
+main .ultimo {
+    border: none !important;
+}
 main .item img {
     width: 380px;
     height: 381px;
+    margin-right: 40px;
 }
 main .item div h2 {
     font-weight: 700;
@@ -184,6 +187,8 @@ main .item div a:hover {
     main .item img {
         width: 310px;
         height: 310px;
+        margin-right: 0px;
+        margin-bottom: 40px;
     }
 }
 @media screen and (max-width: 740px) {

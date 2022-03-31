@@ -40,7 +40,9 @@ header .container h2 a {
 }
 header .container nav ul {
     display: flex;
-    gap: 40px;
+}
+header .container nav ul li:not(:last-child) {
+    margin-right: 40px;
 }
 header .container nav ul a {
     color: #fff;
@@ -61,12 +63,12 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
     flex-wrap: wrap;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 footer .container h2{
     height: 102px;
     width: 312px;
@@ -109,13 +111,21 @@ footer .container div a:not(:last-child) {
     }
     footer .container ul {
         display: flex;
-        gap: 40px;
+    }
+    footer .container ul li:not(:last-child) {
+        margin-right: 40px;
+    }
+    footer .container h2,
+    footer .container ul {
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width: 870px) {
     header .container {
         flex-direction: column;
-        gap: 20px;
+    }
+    header .container h2 {
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 738px) {
@@ -126,8 +136,8 @@ footer .container div a:not(:last-child) {
     }
 }
 @media screen and (max-width: 360px) {
-    header .container nav ul {
-        gap: 20px;
+    header .container nav ul li:not(:last-child) {
+        margin-right: 20px;
     }
     header .container nav ul li a {
         font-size: 18px;
@@ -144,8 +154,8 @@ footer .container div a:not(:last-child) {
         background-size: cover;
         background-position: center;
     }
-    footer .container ul {
-        gap: 20px;
+    footer .container ul li:not(:last-child) {
+        margin-right: 20px;
     }
     footer .container div {
         width: 80%;

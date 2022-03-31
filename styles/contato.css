@@ -1,11 +1,11 @@
 main {
     display: flex;
     justify-content: center;
-    gap: 200px;
     padding: 83px 0 97px;
 }
 form {
     width: 493px;
+    margin-right: 200px;
 }
 form fieldset {
     border: 0;
@@ -90,8 +90,10 @@ img {
 @media screen and (max-width: 1250px) {
     main {
         justify-content: center;
-        gap: 40px;
         align-items: center;
+    }
+    form {
+        margin-right: 40px;
     }
     img {
         width: 30vw;
@@ -102,6 +104,9 @@ img {
     main {
         padding-right: 30px;
         padding-left: 30px;
+    }
+    form {
+        margin-right: 0px;
     }
     img {
         display: none;

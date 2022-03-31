@@ -8,7 +8,9 @@ main .container { padding: 0; margin: auto; }
     padding: 242px 0 201px 0;
     display: flex;
     justify-content: center;
-    gap: 39px;
+}
+.section1 .section1-text {
+    margin-right: 39px;
 }
 .section1 .section1-text h1 {
     font-size: 60px;
@@ -52,12 +54,14 @@ main .container { padding: 0; margin: auto; }
     background-color: #F6F6F6;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     padding: 109px 0 119px 0;
     text-align: center; 
 }
 .section2 div {
     width: 350px;
+}
+.section2 div:not(:last-child) {
+    margin-right: 20px;
 }
 .section2 div img {
     height: 270px;
@@ -102,24 +106,29 @@ main .container { padding: 0; margin: auto; }
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 80px;
 }
 .section3 .item {
     display: flex;
-    gap: 28px;
 }
+.section3 .item:first-of-type {
+    margin-bottom: 80px;
+}
+
 .section3 h2 {
     font-weight: 700;
     font-size: 37px;
     line-height: 50px;
     color: #009688;
-    /* margin-bottom: 78px; */
     width: 100%;
+    margin-bottom: 80px;
 }
 .section3 .item img {
     display: inline-block;
     width: 104px;
     height: 104px;
+}
+.section3 .item img {
+    margin-right: 28px;
 }
 .section3 .item p {
     width: 369px;
@@ -151,11 +160,14 @@ main .container { padding: 0; margin: auto; }
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
 }
 .section4 .box > div {
     width: 319px;
 }
+.section4 .box > div:not(:last-child) {
+    margin-right: 20px;
+}
+
 .section4 .box > div div {
     width: 319px;
     height: 193px;
@@ -201,6 +213,10 @@ main .container { padding: 0; margin: auto; }
         padding: 120px 20px;
     }
     .section1 .section1-text {
+        margin-right: 0px;
+        margin-top: 39px;
+    }
+    .section1 .section1-text {
         align-self: center;
     }
     .section1 .section1-text h1,
@@ -226,9 +242,12 @@ main .container { padding: 0; margin: auto; }
     .section2 {
         flex-direction: column;
         align-items: center;
-        gap: 80px;
         padding: 109px 20px 119px 20px;
         text-align: center; 
+    }
+    .section2 div:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 80px;
     }
     .section2 div,
     .section2 div p {
@@ -239,7 +258,9 @@ main .container { padding: 0; margin: auto; }
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 60px;
+    }
+    .section3 .item:not(:last-child) {
+        margin-bottom: 60px;
     }
     .section3 h2 {
         width: auto;
@@ -247,7 +268,6 @@ main .container { padding: 0; margin: auto; }
     }
     .section3 .item {
         display: flex;
-        gap: 28px;
     }
 }
 @media screen and (max-width: 1225px) {
@@ -261,7 +281,10 @@ main .container { padding: 0; margin: auto; }
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+    }
+    .section4 .box > div:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 60px;
     }
     .section4 .botao {
         margin: 90px auto 0;
@@ -285,7 +308,10 @@ main .container { padding: 0; margin: auto; }
         flex-direction: column;
         text-align: center;
         align-items: center;
-        gap: 28px;
+    }
+    .section3 .item img {
+        margin-right: 0px;
+        margin-bottom: 28px;
     }
     .section3 .item > div p {
         width: auto;
